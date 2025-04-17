@@ -44,7 +44,7 @@ private func parseAuthCallback(_ callbackURL: URL, nonce: String) -> (String?, [
 }
 
 
-func doBibleSDKLogin(appYvId: String,
+public func doBibleSDKLogin(appYvId: String,
                              contextProvider: ASWebAuthenticationPresentationContextProviding,
                               required: Set<YVPPermission>,
                               optional: Set<YVPPermission>,
@@ -81,7 +81,7 @@ func doBibleSDKLogin(appYvId: String,
     
 
 
-func fetchVerseOfTheDay(lat: String,
+public func fetchVerseOfTheDay(lat: String,
                         trans: Int = 1,
                         completion: @escaping (String?, String?, String?, String?) -> Void) async {
     
@@ -115,7 +115,7 @@ func fetchVerseOfTheDay(lat: String,
 }
 
 
-func fetchUserInfo(lat: String,
+public func fetchUserInfo(lat: String,
                    completion: @escaping (String?, String?, String?) -> Void) async {
     
     if lat == "preview" {
