@@ -29,5 +29,5 @@ public struct VotdView: View {
         votdTitle: "Today's Verse",
         votdText: "For God so loved the world...",
         votdCopyright: "John 3:16"
-    )
+    ).padding()
 }
