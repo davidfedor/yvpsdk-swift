@@ -4,6 +4,12 @@ public struct VotdView: View {
     public let votdTitle: String
     public let votdText: String
     public let votdCopyright: String
+    
+    public init(votdTitle: String, votdText: String, votdCopyright: String) {
+        self.votdTitle = votdTitle
+        self.votdText = votdText
+        self.votdCopyright = votdCopyright
+    }
 
     public var body: some View {
         VStack(alignment: .leading) {
